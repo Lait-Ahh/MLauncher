@@ -1,5 +1,5 @@
 .titleBar {
-    background-color: var(--two);
+    background-color: var(--zero);
     display: flex;
     justify-content: space-between;
     -webkit-app-region: drag;

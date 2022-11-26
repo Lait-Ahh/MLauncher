@@ -1,0 +1,32 @@
+{
+  "name": "mlauncher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "electron main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lait-Ahh/MLauncher.git"
+  },
+  "keywords": [],
+  "author": "Lait-Ahh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lait-Ahh/MLauncher/issues"
+  },
+  "homepage": "https://github.com/Lait-Ahh/MLauncher#readme",
+  "dependencies": {
+    "@types/node": "^18.11.9",
+    "electron-is-dev": "^2.0.0",
+    "electron-store": "^8.1.0",
+    "electron-updater": "^5.3.0",
+    "minecraft-launcher-core": "^3.16.16",
+    "msmc": "^3.1.3"
+  },
+  "devDependencies": {
+    "electron": "^21.3.1",
+    "electron-builder": "^23.6.0"
+  }
+}

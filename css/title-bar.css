@@ -1,0 +1,40 @@
+.titleBar {
+    background-color: var(--two);
+    display: flex;
+    justify-content: space-between;
+    -webkit-app-region: drag;
+}
+
+.titleBar__Name {
+    margin: 5px;
+    margin-left: 10px;
+    font-weight: 550;
+    font-size: 1.2em;
+    color: var(--five);
+}
+
+.titleBar__Actions {
+    display: flex;
+    align-items: center;
+    -webkit-app-region: none;
+}
+
+.titleBar__Action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+}
+
+.titleBar__ActionImage {
+    width: 20px;
+}
+
+.titleBar__Action--Primary:hover {
+    background-color: var(--three);
+}
+
+.titleBar__Action--Secondary:hover {
+    background-color: var(--action);
+}

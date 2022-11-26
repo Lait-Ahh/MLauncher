@@ -8,6 +8,14 @@ const store = new Store();
 var win;
 
 app.on('ready', () => {
-    win = new BrowserWindow();
+    win = new BrowserWindow({
+        "icon": "assets/icon128px.png",
+        titleBarStyle: "hidden",
+        movable: true,
+        title: "MLauncher",
+        webPreferences: {
+            nodeIntegration: true
+        }
+    });
     win.loadFile('index.html');
 });

@@ -1,0 +1,20 @@
+:root {
+    --one: #2F3E46;
+    --two: #354F52;
+    --three: #52796F;
+    --four: #84A98C;
+    --five: #CAD2C5;
+
+    --action: #ff7b00;
+}
+
+* {
+    user-select: none;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--one);
+}

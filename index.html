@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/root.css">
     <link rel="stylesheet" href="css/title-bar.css">
+    <link rel="stylesheet" href="css/screens.css">
 </head>
 <body>
    <div class="titleBar">
@@ -21,6 +22,23 @@
                 <img class="titleBar__ActionImage" id="action-close" src="assets/svg/close.svg">
             </div>
         </span>
-   </div> 
+   </div>
+   <div id="root">
+        <div class="Screens">
+            <div class="Screen" id="screen-instances">
+                <div class="ScreenHead">
+                    <label for="search-instances">
+                        <div class="SearchBar">
+                            <img class="SearchBar__Icon" src="assets/svg/search.svg">
+                            <input class="SearchBar__Input" id="search-instances" type="text" placeholder="Search an instance">
+                        </div>
+                    </label>
+                    <div class="Separator--Left">
+                        <button class="Button--Primary">New instance</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
 </body>
 </html>

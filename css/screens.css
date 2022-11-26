@@ -1,0 +1,58 @@
+.ScreenHead {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.ScreenHead label {
+    flex: auto;
+}
+
+.ScreenHead .SearchBar {
+    display: flex;
+    align-items: center;
+    background-color: var(--two);
+}
+
+.ScreenHead .SearchBar__Icon {
+    width: 25px;
+    margin: 5px;
+}
+
+.ScreenHead .SearchBar__Input {
+    flex: auto;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--five);
+}
+
+.ScreenHead .SearchBar__Input::placeholder {
+    text-transform: none;
+    color: var(--four);
+}
+
+.Separator--Left {
+    border-left: var(--two) 2px solid;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.Button--Primary {
+    border: none;
+    padding: 5px;
+    font-size: 1.1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--two);
+    color: var(--five);
+    transition: background .1s;
+}
+
+.Button--Primary:hover {
+    cursor: pointer;
+    background-color: var(--three);
+}

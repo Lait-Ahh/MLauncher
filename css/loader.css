@@ -1,0 +1,58 @@
+@keyframes loader-bar {
+    0% {
+        height: 50px;
+    }
+    50% {
+        height: 80px;
+    }
+    100% {
+        height: 50px;
+    }
+}
+
+.Loader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(140deg, var(--two), var(--one));
+}
+
+.Loader__Text {
+    color: var(--five);
+    font-size: 1.4em;
+}
+
+.Loader__Animation {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.Loader__AnimationBar {
+    width: 8px;
+    height: 50px;
+    margin: 0 5px;
+    border-radius: 4px;
+    background-color: var(--four);
+    animation: loader-bar 1.5s infinite ease-in-out;
+}
+
+.Loader__AnimationBar:nth-child(2) {
+    animation-delay: .2s;
+}
+
+.Loader__AnimationBar:nth-child(3) {
+    animation-delay: .4s;
+}
+
+.Loader__AnimationBar:nth-child(4) {
+    animation-delay: .6s;
+}
+
+.Loader__AnimationBar:nth-child(5) {
+    animation-delay: .8s;
+}

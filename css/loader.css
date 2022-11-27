@@ -10,6 +10,20 @@
     }
 }
 
+@keyframes hide {
+    0% {
+        opacity: 1;
+        display: block;
+    }
+    99% {
+        display: block;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
 .Loader {
     position: absolute;
     width: 100%;

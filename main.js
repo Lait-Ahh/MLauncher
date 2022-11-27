@@ -6,8 +6,6 @@ const Store = require('electron-store');
 Store.initRenderer();
 const store = new Store();
 
-
-
 var win;
 
 app.on('ready', () => {
@@ -17,8 +15,13 @@ app.on('ready', () => {
         movable: true,
         title: "MLauncher",
         webPreferences: {
-            nodeIntegration: true
+            nodeIntegration: true,
+            preload: __dirname + '/preload.js'
         }
     });
-    win.loadFile('index.html');
+    win.loadFile('index.html').then(() => {
+        if(isDev) {
+            win.webContents.send('update-not-available', 'update-not-available');
+        }
+    });
 });

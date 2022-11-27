@@ -25,3 +25,10 @@ function getVersions() {
     });
 }
 
+window.loader.listen('update-not-available', () => {
+    document.querySelector('.Loader__Text').innerHTML = 'Scraping forge versions';
+    getVersions().then(v => {
+        window.config.set('versions', v);
+        document.querySelector('.Loader').style.animation = "hide 1s forwards";
+    });
+});

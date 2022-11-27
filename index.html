@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/root.css">
     <link rel="stylesheet" href="css/title-bar.css">
     <link rel="stylesheet" href="css/screens.css">
+    <link rel="stylesheet" href="css/modals.css">
+    <script type="text/javascript" src="index.js"></script>
 </head>
 <body>
    <div class="titleBar">
@@ -24,6 +26,43 @@
         </span>
    </div>
    <div id="root">
+        <div class="Modals">
+            <div class="Modal" id="modal-new-instance">
+                <div class="ModalHead">
+                    <h2 class="ModalHead__Title">New instance</h2>
+                    <div class="ModalHead__Close">
+                        <img class="ModalHead__CloseIcon" src="assets/svg/close.svg">
+                    </div>
+                </div>
+                <div class="ModalBody">
+                    <div class="NewInstance__Infos">
+                        <label class="NewInstance__Icon">
+                            <input type="file" id="instance-icon-uploader">
+                            <img src="assets/default_instance.png">
+                        </label>
+                        <span class="NewInstance__Name">
+                            <label for="instance-name">Instance Name</label>
+                            <input type="text" id="instance-name">
+                        </span>
+                    </div>
+                    <span class="Selector">
+                        <label>Minecraft Version</label>
+                        <select>
+                            
+                        </select>
+                    </span>
+                    <span class="Selector">
+                        <label>Forge Version</label>
+                        <select>
+                            
+                        </select>
+                    </span>
+                    <div class="ButtonList">
+                        <button>Create</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="Screens">
             <div class="Screen" id="screen-instances">
                 <div class="ScreenHead">

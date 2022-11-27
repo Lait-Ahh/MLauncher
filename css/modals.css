@@ -1,0 +1,128 @@
+.Modals {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0000006c;
+    display: none;
+}
+
+.Modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--one);
+    display: none;
+}
+
+.ModalHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--two);
+}
+
+.ModalHead__Title {
+    margin: 0;
+    margin-left: 7px;
+    font-size: 1.2em;
+    color: var(--five);
+}
+
+.ModalHead__Close {
+    padding: 5px;
+    margin-left: 25px;
+}
+
+.ModalHead__Close:hover {
+    background-color: var(--action);
+}
+
+.ModalHead__CloseIcon {
+    width: 20px;
+    display: flex;
+}
+
+.ModalBody {
+    padding: 5px;
+}
+
+.Modal#modal-new-instance .ModalBody {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.Modal#modal-new-instance .ModalBody .NewInstance__Infos {
+    display: flex;
+}
+
+.Modal#modal-new-instance .ModalBody .NewInstance__Infos .NewInstance__Icon img {
+    width: 75px;
+    margin-right: 10px;
+}
+
+.Modal#modal-new-instance .ModalBody .NewInstance__Infos .NewInstance__Icon img:hover {
+    filter: grayscale(0.5);
+    cursor: pointer;
+}
+
+.Modal#modal-new-instance .ModalBody .NewInstance__Infos .NewInstance__Name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Modal#modal-new-instance .ModalBody .NewInstance__Infos .NewInstance__Name label {
+    color: var(--five);
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.Modal#modal-new-instance .ModalBody .NewInstance__Infos .NewInstance__Name input {
+    background-color: var(--two);
+    color: var(--five);
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+.Modal#modal-new-instance .ModalBody .Selector {
+    display: flex;
+    flex-direction: column;
+}
+
+.Modal#modal-new-instance .ModalBody .Selector label {
+    color: var(--five);
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+.Modal#modal-new-instance .ModalBody .Selector select {
+    background-color: var(--two);
+    color: var(--five);
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Modal#modal-new-instance .ModalBody .ButtonList {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.Modal#modal-new-instance .ModalBody .ButtonList button {
+    margin-top: 15px;
+    border: none;
+    padding: 5px 25px;
+    font-size: 1.1em;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--action);
+    color: var(--zero);
+    cursor: pointer;
+}

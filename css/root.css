@@ -27,3 +27,7 @@ html, body {
     width: 100%;
     height: calc(100% - 36px);
 }
+
+input[type="file"] {
+    display: none;
+}

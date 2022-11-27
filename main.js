@@ -3,7 +3,10 @@ const { autoUpdater } = require('electron-updater');
 const isDev = require('electron-is-dev');
 const Store = require('electron-store');
 
+Store.initRenderer();
 const store = new Store();
+
+
 
 var win;
 
